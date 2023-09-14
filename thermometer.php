@@ -29,8 +29,8 @@
     <?php
     $t = rand(-20, 20);
     echo "<table>\n";
-    for ($i = -20; $i < 21; $i++) {
-        echo "<tr><td>$i</td><td style=\"background-color: " . ($i < $t + 1 ? 'red' : 'gold') . ";\"></td></tr>";
+    for ($i = 20; $i >= -20; $i--) {
+        echo "<tr><td>$i</td><td style=\"background-color: " . ($i > $t ? 'red' : 'gold') . ";\"></td></tr>";
     }
     echo "\n\t</table>\n";
     ?>
